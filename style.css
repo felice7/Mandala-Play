@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1E242A;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    background-image: url(/img/mandala-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -100%;
+    left: 5%;
+    top: 20%;
+    animation: anim 1s forwards, anim2 1s forwards 1s;
+}
+
+.box1:after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: url(/img/mandala-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+    z-index: -1;
+}
+
+@keyframes anim {
+    from {
+        bottom: -100%;
+        
+    }
+    to {
+        bottom: 0%;
+        
+    }
+}
+
+@keyframes anim2 {
+    from {
+        left: 5%;
+        width: 500px;
+        
+        
+    }
+    to {
+        width: 0%;
+        left: 50%;
+           
+    }
+}
+
+.box2 {
+    width: auto;
+    height: auto;
+    color: #99c2ff;
+    font-size: 5em;
+    font-weight: 500;
+    line-height: 130px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    font-family: 'Righteous', cursive;
+    left: -100%;
+    animation: anim3 1s forwards 1s;
+}
+
+#create {
+    font-size: 30px;
+    background-image: linear-gradient(to right, #1e4c9d, #3d64b2, #587dc8, #7297dd, #8db1f3);
+    text-align: center;
+    border-radius: 10px;
+    color: #cce0ff;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+#create:hover {
+    color: #000;
+}
+
+@keyframes anim3 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }    
+}
+
+.box3 {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+}
+
+
+
+
+.box3 .mandala21 {
+    position: absolute;
+    
+}
+
+.box3 .mandala20 {
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.box3 .mandala19 {
+    position: absolute;
+    z-index: -2;
+    
+    
+}
+
+.box3 .mandala18 {  
+    position: absolute;
+    z-index: -3;
+    
+    
+}
+
+.box3 .mandala17 {
+    
+    position: absolute;
+    z-index: -4;
+}
+
+.box3 .mandala16 {
+    
+    position: absolute;
+    z-index: -5;
+}
+
+.box3 .mandala15 {
+    
+    position: absolute;
+    z-index: -6;
+}
+
+.box3 .mandala14 {
+   
+    position: absolute;
+    z-index: -7;
+}
+
+.box3 .mandala13 {
+   
+    position: absolute;
+    z-index: -8;
+}
+
+.box3 .mandala12 {
+    
+    position: absolute;
+    z-index: -9;
+}
+
+.box3 .mandala11 {
+    
+    position: absolute;
+    z-index: -10;
+}
+
+.box3 .mandala10 {
+    
+    position: absolute;
+    z-index: -11;
+}
+
+.box3 .mandala9 {
+    
+    position: absolute;
+    z-index: -11;
+}
+
+.box3 .mandala8 {
+    
+    position: absolute;
+    z-index: -11;
+}
+
+.box3 .mandala7 {
+    
+    position: absolute;
+    z-index: -12;
+}
+
+.box3 .mandala6 {
+    
+    position: absolute;
+    z-index: -13;
+}
+
+.box3 .mandala5 {
+    
+    position: absolute;
+    z-index: -14;
+}
+
+.box3 .mandala4 {
+    
+    position: absolute;
+    z-index: -15;
+}
+
+.box3 .mandala3 {
+    
+    position: absolute;
+    z-index: -15;
+}
+
+.box3 .mandala2 {
+    
+    position: absolute;
+    z-index: -15;
+}
+
+.box3 .mandala1 {
+    position: absolute;
+    z-index: -19;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    bottom:70px;
+}
+
+#rotate, #refresh, #go, #stop {
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #1e4c9d, #3d64b2, #587dc8, #7297dd, #8db1f3);
+    text-align: center;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #cce0ff;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+#rotate:hover, #refresh:hover {
+    color: #000;
+}
+
+#go:hover, #stop:hover {
+    color: red;
+}
